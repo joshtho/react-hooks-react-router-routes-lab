@@ -11,17 +11,17 @@ function App() {
     <div>
       <NavBar />
       <Switch>
-        <Route path={"/actors"} >
-          <Actors />
+        <Route exact path="/" >
+          <Home />
         </Route>
-        <Route path={"/directors"} >
-          <Directors />
-        </Route>
-        <Route path={"/movies"} >
+        <Route path="/movies" >
           <Movies />
         </Route>
-        <Route path={"/"} >
-          <Home />
+        <Route path="/directors" >
+          <Directors />
+        </Route>
+        <Route path="/actors" >
+          <Actors />
         </Route>
       </Switch>
 
